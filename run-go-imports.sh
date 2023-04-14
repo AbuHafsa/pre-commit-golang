@@ -2,6 +2,8 @@
 #
 # Capture and print stdout, since goimports doesn't use proper exit codes
 #
+PATH="$PATH:$(go env GOPATH)/bin"
+
 set -e -o pipefail
 
 if ! command -v goimports &> /dev/null ; then

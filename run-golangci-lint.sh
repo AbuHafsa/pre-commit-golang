@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+PATH="$PATH:$(go env GOPATH)/bin"
+
 set -eu -o pipefail
 
 if ! command -v golangci-lint &> /dev/null ; then
