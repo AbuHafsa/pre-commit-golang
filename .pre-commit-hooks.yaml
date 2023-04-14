@@ -1,3 +1,8 @@
+- id: go-env
+  name: "go env"
+  entry: run-go-env.sh
+  language: "script"
+  description: "Sets path with GOPATH value"
 - id: go-fmt
   name: "go fmt"
   entry: run-go-fmt.sh
