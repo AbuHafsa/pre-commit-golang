@@ -53,9 +53,8 @@
 - id: golangci-lint
   name: "golangci-lint"
   entry: run-golangci-lint.sh
-  args: ["golangci-lint"]
   types: [go]
-  language: "script"
+  language: "golang"
   pass_filenames: false
   description: "Runs `golangci-lint`, requires https://github.com/golangci/golangci-lint"
 - id: go-critic
